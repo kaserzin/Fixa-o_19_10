@@ -4,28 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprimento de uma Palavra</title>
-    <script>
-        function calcComprimento() {
-            let palavra = document.getElementById('palavra').value;
-            let comprimento = palavra.length;
-            document.getElementById('resultado').innerText = `A palavra "${palavra}" tem ${comprimento} caracteres.`;
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
-        <ul style="list-style-type: none;">
-            <li><a href="atv1.html">Cálculo de Combustível</a></li>
-            <li><a href="atv3.html">Valor do Terreno</a></li>
+        <ul>
+            <li><a href="questao_20.html">Valor do Terreno</a></li>
+            <li><a href="questao_32.html">Cálculo de Combustível</a></li>
         </ul>
     </nav>
+
     <h1>Calcule o Comprimento de uma Palavra</h1>
     <form>
         <label for="palavra">Digite uma palavra:</label>
         <input type="text" id="palavra" required><br><br>
 
-        <button type="button" onclick="calcComprimento()">Calcular</button>
+        <button type="button" onclick="calcularComprimento()">Calcular</button>
     </form>
     <p id="resultado"></p>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
